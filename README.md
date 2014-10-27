@@ -7,7 +7,8 @@ In school my children, when they start learning how to read and write (which in 
 
 The letters used here are the letters of the Dutch alphabet (26 of them) and a number of other combined vowels and sounds that are important for Dutch children when they learn to read and write. 
 
-= Building the application =
+Building the application
+
 You need the yeoman stack (node.js, yo, bower and grunt) to build the project. 
 
 
