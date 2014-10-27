@@ -1,0 +1,15 @@
+.letterIn.ng-show, .letterIn.ng-hide {
+ -webkit-transition:0.5s linear all;
+ -moz-transition:0.5s linear all;
+ -o-transition:0.5s linear all;
+ transition:0.5s linear all;
+ opacity:0;
+}
+
+.letterOut.ng-show, .letterOUt.ng-hide {
+ -webkit-transition:0.5s linear all;
+ -moz-transition:0.5s linear all;
+ -o-transition:0.5s linear all;
+ transition:0.5s linear all;
+ opacity:1;
+}

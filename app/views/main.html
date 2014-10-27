@@ -1,0 +1,50 @@
+<div class="row">
+	<div class="row delay">
+		<div class="col-xs-4">
+			<label>Flitstijd</label>
+			<input type="number" ng-model="delay" class="col-xs-2"/>
+		</div>
+		<div class="col-xs-4">
+			<label>tijd</label>
+			<span>{{timeSpent}}</span>
+		</div>
+		<div class="col-xs-4">
+			<label>letters gezien</label>
+			<span>{{nrOfLettersShown}}</span>
+		</div>
+
+	</div>
+	<div class="jumbotron">
+		
+	    <h1 id="letterHolder">{{currentLetter}}</h1>
+	    <button ng-click="startFlitsen()"  class="btn btn-primary" ><span class="glyphicon glyphicon-play"> Start</span></button>
+		<button ng-click="stopFlitsen()"  class="btn btn-warning"><span class="glyphicon glyphicon-stop"></span> Stop</button>
+	</div>
+
+	<div class="row" ng-controller="LetterselectionCtrl">
+
+		
+		
+		<accordion close-others="oneAtATime"> 
+		    <accordion-group heading="Letter Selection" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+			  <div collapse="isCollapsed">
+				<ul class="checkboxes">
+				    <li ng-repeat="letterObject in $parent.letterObjects">
+				      <input type="checkbox" ng-model="letterObject.available"}/>
+				      <label>{{letterObject.letter}}</label>
+				     
+				    </li>
+				    
+			  	</ul> 
+			  	<p>
+			  		<button ng-click="toggleSelect()" class="btn btn-primary">{{selectedPrefix}} Selecteren</button>
+			  	</p>
+			  </div>
+			 
+		    </accordion-group>
+		</accordion>
+
+	</div>
+
+</div>
+
